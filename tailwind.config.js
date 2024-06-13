@@ -13,6 +13,9 @@ export default {
         warning: "#D97706",
         error: "#F25248",
       },
+      fontFamily: {
+        poppins: ["Poppins"],
+      },
     },
   },
   plugins: [require("daisyui")],
