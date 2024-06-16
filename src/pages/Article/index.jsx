@@ -30,7 +30,7 @@ const Article = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl ml-8 mb-4">Berita Kesehatan Terkini</h1>
+      <h1 className="text-3xl ml-8 mb-4">Artikel Terkini</h1>
       <div className="flex flex-wrap justify-center gap-4">
         {articles.map((article, index) => (
           <div

@@ -5,6 +5,8 @@ import Register from "./components/molecules/loginregister/Register";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Article from "./pages/Article";
+import History from "./pages/History";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/article" element={<Article />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </Router>
     </>
