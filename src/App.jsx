@@ -8,6 +8,7 @@ import Article from "./pages/Article";
 import History from "./pages/History";
 import FAQ from "./pages/FAQ";
 import Consultation from "./pages/KonsultasiMedis";
+import Medicine from "./pages/Medicine"
 import Appshell from "@components/molecules/Appshell";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/history" element={<History />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/konsultasi-medis" element={<Consultation />} />
+            <Route path="/medicine" element={<Medicine />} />
           </Routes>
         </Appshell>
       </Router>

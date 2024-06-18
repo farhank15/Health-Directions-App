@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const token = Cookies.get("userToken");
@@ -17,6 +18,7 @@ const Navbar = () => {
     Cookies.remove("userToken");
     setIsLoggedIn(false);
     setShowDropdown(false);
+    navigate("/about"); // Arahkan ke halaman "Tentang Kami"
   };
 
   const toggleDropdown = () => {
@@ -95,7 +97,7 @@ const Navbar = () => {
                   <Link to="/history">Riwayat Konsultasi</Link>
                 </li>
                 <li>
-                  <Link to="/recipe">Resep Obat</Link>
+                  <Link to="/medicine">Obat</Link>
                 </li>
               </ul>
             </details>
