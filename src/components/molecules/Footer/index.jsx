@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="/FAQ" className="link-hover">
             FAQ
           </a>
-          <a href="/consul" className="link-hover">Konsul Sekarang</a>
+          <a href="/konsultasi-medis" className="link-hover">Konsul Sekarang</a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-5">
