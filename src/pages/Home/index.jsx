@@ -14,6 +14,7 @@ import MenstruationIcon from "../../assets/images/medical-team.png"; // Placehol
 import DoctorQualified from "../../assets/images/Heromain2.webp"; // Placeholder for the actual path
 import BackgroundQualified from "../../assets/images/bg.png"; // Placeholder for the actual path
 
+
 const Home = () => {
   return (
     <div>
@@ -43,10 +44,11 @@ const Hero = () => {
             konsultasi medis secara online dengan dokter yang tersedia, serta
             memberikan resep obat dalam bentuk barcode.
           </p>
+          <a href="/konsultasi-medis">
           <ButtonApp
             className="px-6 py-2 mt-4 text-white rounded-lg bg-primary hover:bg-secondary md:mt-6"
-            name="Coba Konsultasi Gratis"
-          />
+            name="Coba Konsultasi Gratis"/> 
+          </a>
 
           <div className="flex justify-around mt-8">
             <div className="text-center">
@@ -227,12 +229,9 @@ const QualifiedDoctors = () => {
               <h4 className="text-2xl font-bold text-white">
                 Dr. James Wellington
               </h4>
-              <p className="text-white">Read More</p>
+              <p className="text-white">From Bali</p>
             </div>
           </div>
-          <button className="px-6 py-2 mt-6 text-white rounded-lg bg-primary hover:bg-secondary">
-            View All Doctors
-          </button>
         </div>
         <div className="relative flex items-center justify-center w-full md:w-1/2">
           <div className="relative w-3/4 md:w-full">
@@ -241,8 +240,8 @@ const QualifiedDoctors = () => {
               alt="Doctor Qualified"
               className="object-cover w-full rounded-lg"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="p-2 rounded-full shadow-lg">
+            <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4">
+              <button className="bg-white p-2 rounded-full shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6 text-gray-800"
@@ -258,9 +257,7 @@ const QualifiedDoctors = () => {
                   />
                 </svg>
               </button>
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button className="p-2 bg-white rounded-full shadow-lg">
+              <button className="bg-white p-2 rounded-full shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6 text-gray-800"
