@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 sticky top-0 left-0 right-0 z-50">
+    <div className="sticky top-0 left-0 right-0 z-50 navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="w-5 h-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -26,77 +27,77 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a href="/">Beranda</a>
+              <Link to="/">Beranda</Link>
             </li>
             <li>
-              <a href="about">Tentang Kami</a>
+              <Link to="/about">Tentang Kami</Link>
             </li>
             <li>
-              <a>Fitur</a>
+              <span>Fitur</span>
               <ul className="p-2">
                 <li>
-                  <a href="consul">Konsultasi Medis</a>
+                  <Link to="/konsultasi-medis">Konsultasi Medis</Link>
                 </li>
                 <li>
-                  <a href="history">Riwayat Konsultasi</a>
+                  <Link to="/history">Riwayat Konsultasi</Link>
                 </li>
                 <li>
-                  <a href="recipe">Resep Obat</a>
+                  <Link to="/recipe">Resep Obat</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="article">Artikel</a>
+              <Link to="/article">Artikel</Link>
             </li>
           </ul>
         </div>
-        <img className="logo w-12" src="src/assets/logo/logo.svg" />
-        <a
-          href="/"
-          className="btn italic btn-ghost text-lg sm:text-2xl md:text-xl lg:text-3xl"
+        <img className="w-12 logo" src="src/assets/logo/logo.svg" alt="Logo" />
+        <Link
+          to="/"
+          className="text-lg italic btn btn-ghost sm:text-2xl md:text-xl lg:text-3xl"
         >
           HealthDirection
-        </a>
+        </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="hidden navbar-center lg:flex">
+        <ul className="px-1 menu menu-horizontal">
           <li>
-            <a href="/" className="text-xl">
+            <Link to="/" className="text-xl">
               Beranda
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="about" className="text-xl">
+            <Link to="/about" className="text-xl">
               Tentang Kami
-            </a>
+            </Link>
           </li>
           <li>
             <details>
               <summary className="text-xl">Fitur</summary>
-              <ul className="p-2">
+              <ul className="p-2 w-52">
                 <li>
-                  <a href="consul">Konsultasi Medis</a>
+                  <Link to="/konsultasi-medis">Konsultasi Medis</Link>
                 </li>
                 <li>
-                  <a href="history">Riwayat Konsultasi</a>
+                  <Link to="/history">Riwayat Konsultasi</Link>
                 </li>
                 <li>
-                  <a href="recipe">Resep Obat</a>
+                  <Link to="/recipe">Resep Obat</Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a href="article" className="text-xl">
+            <Link to="/article" className="text-xl">
               Artikel
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="login" className="btn mr-8 px-5 py-2">
+        <Link to="/login" className="px-5 py-2 mr-8 btn">
           Login
-        </a>
+        </Link>
       </div>
     </div>
   );
