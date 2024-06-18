@@ -7,20 +7,25 @@ import About from "./pages/About";
 import Article from "./pages/Article";
 import History from "./pages/History";
 import FAQ from "./pages/FAQ";
+import Consultation from "./pages/KonsultasiMedis";
+import Appshell from "@components/molecules/Appshell";
 
 function App() {
   return (
     <>
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/article" element={<Article />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/faq" element={<FAQ />} />
-        </Routes>
+        <Appshell>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/article" element={<Article />} />
+            <Route path="/history" element={<History />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/konsultasi-medis" element={<Consultation />} />
+          </Routes>
+        </Appshell>
       </Router>
     </>
   );

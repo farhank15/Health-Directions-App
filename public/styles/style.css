@@ -1,0 +1,4 @@
+.chat-message-container {
+  max-width: 75%; /* Adjust as needed */
+  word-break: break-word;
+}
