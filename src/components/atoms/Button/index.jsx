@@ -1,11 +1,16 @@
+// ButtonApp.js
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 
-const ButtonApp = ({ className, name, ...props }) => {
+const ButtonApp = ({ className, name }) => {
+  const navigate = useNavigate(); // Initialize useNavigate hook
+
+  const handleClick = () => {
+    navigate("/consul"); // Use navigate to redirect
+  };
+
   return (
-    <button
-      className={`btn transition duration-300 ease-in-out transform hover:scale-105 active:scale-95  ${className}`}
-      {...props}
-    >
+    <button className={className} onClick={handleClick}>
       {name}
     </button>
   );

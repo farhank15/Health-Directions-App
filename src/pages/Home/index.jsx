@@ -227,12 +227,9 @@ const QualifiedDoctors = () => {
               <h4 className="text-2xl font-bold text-white">
                 Dr. James Wellington
               </h4>
-              <p className="text-white">Read More</p>
+              <p className="text-white">From Bali</p>
             </div>
           </div>
-          <button className="mt-6 px-6 py-2 text-white bg-primary rounded-lg hover:bg-secondary">
-            View All Doctors
-          </button>
         </div>
         <div className="relative w-full md:w-1/2 flex justify-center items-center">
           <div className="relative w-3/4 md:w-full">
@@ -241,7 +238,7 @@ const QualifiedDoctors = () => {
               alt="Doctor Qualified"
               className="w-full object-cover rounded-lg"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4">
               <button className="bg-white p-2 rounded-full shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -258,8 +255,6 @@ const QualifiedDoctors = () => {
                   />
                 </svg>
               </button>
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
               <button className="bg-white p-2 rounded-full shadow-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
