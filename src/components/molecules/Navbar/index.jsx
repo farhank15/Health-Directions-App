@@ -62,11 +62,7 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <img
-          className="w-12 logo"
-          src="src/assets/logo/logo.svg"
-          alt="Logo"
-        />
+        <img className="w-12 logo" src="src/assets/logo/logo.svg" alt="Logo" />
         <Link
           to="/"
           className="text-lg italic btn btn-ghost sm:text-2xl md:text-xl lg:text-3xl"

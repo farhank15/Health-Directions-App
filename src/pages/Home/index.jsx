@@ -13,7 +13,7 @@ import LabIcon from "../../assets/images/medical-team.png"; // Placeholder for t
 import MenstruationIcon from "../../assets/images/medical-team.png"; // Placeholder for the actual path
 import DoctorQualified from "../../assets/images/Heromain2.webp"; // Placeholder for the actual path
 import BackgroundQualified from "../../assets/images/bg.png"; // Placeholder for the actual path
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -37,18 +37,21 @@ const Hero = () => {
           <h2 className="mt-2 text-lg font-semibold text-gray-900 md:text-3xl">
             Aplikasi Konsultasi untuk Peningkatan SDM di Bidang Kesehatan
           </h2>
-          <p className="mt-2 text-xs text-gray-700 md:text-xl md:mt-4">
+          <p className="mt-2 text-xs mb-4 text-gray-700 md:text-xl md:mt-4">
             Dalam beberapa tahun terakhir, perhatian besar terhadap perubahan
             paradigma dalam layanan kesehatan menuju layanan digital semakin
             meningkat. Kami menyediakan fasilitas untuk mengatur jadwal
             konsultasi medis secara online dengan dokter yang tersedia, serta
             memberikan resep obat dalam bentuk barcode.
           </p>
-          <a href="/konsultasi-medis">
-          <ButtonApp
-            className="px-6 py-2 mt-4 text-white rounded-lg bg-primary hover:bg-secondary md:mt-6"
-            name="Coba Konsultasi Gratis"/> 
-          </a>
+          <div>
+            <Link
+              to="/konsultasi-medis"
+              className="px-6 py-2 mt-4 text-white rounded-lg bg-primary hover:bg-secondary md:mt-6"
+            >
+              Coba Konsultasi Gratis
+            </Link>
+          </div>
 
           <div className="flex justify-around mt-8">
             <div className="text-center">
