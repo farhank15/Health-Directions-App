@@ -123,35 +123,27 @@ const Feature = () => {
 const OurTeams = () => {
   const teamMembers = [
     {
-      name: "Theresa Webb",
-      title: "Application Support Analyst Lead",
+      name: "Ahmad Farhan Kholiq",
+      title: "Proklamasi 45 University",
       description:
         "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-      image: "/path/to/theresa.jpg",
+      image: "/dist/assets/avatar.svg",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "Courtney Henry",
-      title: "Director, Undergraduate Analytics and Planning",
+      name: "Fahmi Nabil Khairi",
+      title: "Gunadarma University",
       description: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
-      image: "/path/to/courtney.jpg",
+      image: "/dist/assets/avatar.svg",
       twitter: "#",
       linkedin: "#",
     },
     {
-      name: "Albert Flores",
-      title: "Career Educator",
+      name: "Benoni Manase Tarigan",
+      title: "Proklamasi 45 University",
       description: "Former PM for Linear, Lambda School, and On Deck.",
-      image: "/path/to/albert.jpg",
-      twitter: "#",
-      linkedin: "#",
-    },
-    {
-      name: "Marvin McKinney",
-      title: "Program & Operations Manager",
-      description: "Former lead dev for Linear, Coinbase, and Postscript.",
-      image: "/path/to/marvin.jpg",
+      image: "/dist/assets/avatar.svg",
       twitter: "#",
       linkedin: "#",
     },
@@ -161,7 +153,7 @@ const OurTeams = () => {
     <div className="flex justify-center">
       <section className="w-full max-w-6xl py-16">
         <div className="container px-4 mx-auto text-center md:px-8">
-          <h3 className="mb-2 text-lg font-bold text-green-600">Tutors</h3>
+          <h3 className="mb-2 text-lg font-bold text-green-600">Authors</h3>
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
             Meet the Heroes
           </h2>
